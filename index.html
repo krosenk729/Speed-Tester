@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Speed of Scripts</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Link to your script file or insert a function here and test how fast your code is">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="speed-test flexer">
+			<header>
+				<h1 class="fancy">Heyyy</h1>
+				<h4>So you want to see how some code performs?</h4>
+				<fieldset class="top-corner">
+					<label for="numruns">Custom # of runs:</label>
+					<input type="number" min="0" max="100000" name="numruns" id="numruns" value="10">
+				</fieldset>
+				<p id="instructions">See instructions >>></p>
+			</header>
+			<div class="test-running flexer">
+				<div class="test-one-wrap test-wrap" id="1">
+					<h2>Testing <span class="fancy">This</span> Code?</h2>
+					<h4>Test it with <strong>these</strong> buttons</h4>
+					<button data-type="quick" id="1">Single Quick Test</button>
+					<button data-type="avg" id="2">Avg of Many</button>
+					<button data-type="detail" id="3">Details from Many</button>
+					<p class="test-results" id="test-one-results"></p>
+				</div><!-- test-one-wrap -->
+				<div class="test-two-wrap test-wrap" id="2">
+					<h2>Testing <span class="fancy">Other</span> Code?</h2>
+					<h4>Test it with these buttons</h4>
+					<button data-type="quick" id="4">Single Quick Test</button>
+					<button data-type="avg" id="5">Avg of Many</button>
+					<button data-type="detail" id="6">Details from Many</button>
+					<p class="test-results" id="test-two-results"></p>
+				</div><!-- test-two-wrap -->
+			</div><!--test-wrap-->
+
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/test.js"></script>
+<script src="js/your-code.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/**
+ * Font Stlyles
+ */
+
+body{
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+ @font-face{
+	font-family: 'Middle Class Script';
+	src: url('Middle-Class-Script.otf') format('opentype'),
+		url('Middle-Class-Script.ttf') format('truetype');
+}
+
+.fancy{
+	font-family: 'Middle Class Script', script;
+}
+
+header h1{
+	font-size: 3em;
+}
+
+/**
+ * Layout
+ */
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #1E2023;
+}
+
+.flexer{
+	width: 100%;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flexer > div{
+	flex-basis: 100%;
+}
+
+.speed-test{
+	flex-direction: column;
+	height: 100%;
+}
+
+header{
+	flex-basis: 25%;
+	background: #FFCC00;
+	padding: 1.5em;
+}
+
+
+/**
+ * Layout Design Treatment
+ * Lt Grey #E2E2E2 
+ * Yellow #FFCC00
+ * Not black #1E2023
+ */
+
+.top-corner{
+	position: absolute;
+	top: -5px;
+	right: .4em;
+}
+
+#numruns{
+	background: none;
+	border: none;
+	border-bottom: 2px solid #1E2023;
+	text-align: center;
+	width: 40px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ #instructions{
+ 	display: inline;
+ 	padding: .5em;
+ 	margin: .5em;
+ }
+
+ #instructions:hover{
+ 	border-left: 1em solid white;
+ 	border-right: 1em solid white;
+ }
+
+.test-wrap{
+	padding: .7em;
+	border: 6px solid #1E2023;
+}
+.test-wrap:nth-child(even){
+	border-left-width: 3px;
+}
+.test-wrap:nth-child(odd){
+	border-right-width: 3px;
+}
+
+button{
+	padding: .7em 1em;
+	margin: .2em;
+	border: 4px solid #FFCC00;
+	background: none;
+	outline: none;
+	font-size: 1em;
+	font-weight: bold;
+	transition: 1s;
+	text-align: left;
+}
+
+button:before{
+	content: "Smash Me For...";
+	display: block;
+	font-size: .8em;
+	font-weight: normal;
+	line-height: 1.5em;
+}
+
+button:after{
+	content: "➔";
+	opacity: 0;
+}
+
+button:hover{
+	background: #FFCC00;
+}
+button:hover::after{
+	opacity: 1;
+}
