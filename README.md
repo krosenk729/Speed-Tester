@@ -17,4 +17,3 @@ cd Speed-Test
 ### Example
 
 ![example](img/updatedYourCode.png)
-
