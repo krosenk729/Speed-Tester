@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$('button').click(function(){
 		let t,
 		numRuns = $('#numruns').val().trim(),
-		testRun = ($(this).parent().attr('id') === 1) 
+		testRun = ($(this).parent().attr('id') === '1') 
 			? new SPEEDTEST(YOURCODE.testThisCode, YOURCODE.paramsFor1, numRuns) 
 			: new SPEEDTEST(YOURCODE.testOtherCode, YOURCODE.paramsFor2, numRuns);
 
@@ -25,4 +25,10 @@ $(document).ready(function(){
 		$(this).parent().find('.test-results').html(t);
 	});
 
+	$('#instructions, #closemodal').click(function(){
+		$('.modal-screen').toggleClass('hideme');
+		$('.speed-test').toggleClass('trimme');
+	});
+
 });
+

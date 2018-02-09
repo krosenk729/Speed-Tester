@@ -17,7 +17,7 @@
 					<label for="numruns">Custom # of runs:</label>
 					<input type="number" min="0" max="100000" name="numruns" id="numruns" value="10">
 				</fieldset>
-				<p id="instructions">See instructions >>></p>
+				<a id="instructions">See instructions >>></a>
 			</header>
 			<div class="test-running flexer">
 				<div class="test-one-wrap test-wrap" id="1">
@@ -39,7 +39,23 @@
 			</div><!--test-wrap-->
 
 	</div>
-
+	<div class="modal-screen hideme">
+		<div class="modal-contents">
+			<div class="modal-instructions">
+				<h3>1. Open <span class="fancy">your-code.js</span></h3>
+				<p>The file should look like this:</p>
+				<img src="img/defaultYourCode.png" alt="Default view of what YourCode file looks like before it is updated" class="instruct-img">
+			</div>
+			<div class="modal-instructions">
+				<h3>2. Add your code inside of <span class="fancy">testThisCode</span> and <span class="fancy">testOtherCode</span></h3>
+				<p>And update the parameter values too. Here is an example:</p>
+				<img src="img/updatedYourCode.png" alt="Default view of what YourCode file looks like before it is updated" class="instruct-img">
+			</div>
+			<div class="modal-actions">
+				<a id="closemodal">Close</a>
+			</div>
+		</div>
+	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/test.js"></script>
 <script src="js/your-code.js"></script>
