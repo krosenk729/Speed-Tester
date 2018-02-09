@@ -1,8 +1,11 @@
 # SPEED TEST
 Test how fast your code goes
+
 [See the site here](https://krosenk729.github.io/Speed-Test/)
 
-### Clone This Repo
+
+### DIY
+
 
 ```
 git clone https://github.com/krosenk729/Speed-Test.git
@@ -14,6 +17,8 @@ cd Speed-Test
 3. Update the parameters for your functions by changing the assignment to ```YourCode.paramsFor1``` and ```YourCode.paramsFor2``` 
 4. Hit save then open up Speed-Test/index.html
 
-### Example
+
+### Example Updated Code
+
 
 ![example](img/updatedYourCode.png)
