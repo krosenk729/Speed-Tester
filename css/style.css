@@ -89,6 +89,10 @@ header{
 	width: 40px;
 }
 
+input{
+	outline: none !important;
+}
+
 input[type='number'] {
     -moz-appearance:textfield;
 }
