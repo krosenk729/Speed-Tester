@@ -4,6 +4,12 @@ Test how fast your code goes
 [See the site here](https://krosenk729.github.io/Speed-Test/)
 
 
+### Demo
+
+
+![demo](img/demo.gif)
+
+
 ### DIY
 
 
@@ -24,8 +30,3 @@ cd Speed-Test
 ![example](img/updatedYourCode.png)
 
 
-
-### Demo
-
-
-![demo](img/demo.gif)
